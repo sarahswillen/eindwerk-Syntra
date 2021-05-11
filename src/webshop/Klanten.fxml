@@ -17,7 +17,7 @@
                 <Button text="Create"/>
                 <Button text="View"/>
                 <Label text="Klanten"/>
-                <Label text="test"/>
+                
             </HBox>
             <HBox spacing="10">
                 <Label text="ID: " />
