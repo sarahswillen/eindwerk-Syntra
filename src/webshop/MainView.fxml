@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+<BorderPane prefHeight="400" prefWidth="700"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="webshop.Controller" fx:id="mainPaine">
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+
+    <left>
+        <VBox styleClass="classMenu" >
+            <Button text="Dashboard" onAction="#handleButtonDashboard"/>
+            <Button text="Categorieën" onAction="#handleButtonCategorie"/>
+            <Button text="Artikels" onAction="#handleButtonArtikels"/>
+            <Button text="Klanten" onAction="#handleButtonKlanten"/>
+            <Button text="Reviews" onAction="#handleButtonReviews"/>
+            <Button text="Actiecodes" onAction="#handleButtonActieCodes"/>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox styleClass="classCenter">
+            <Text text="WELCOME!"/>
+        </VBox>
+
+    </center>
+
+
+</BorderPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="webshop.Controller"
+            prefHeight="400.0" prefWidth="600.0"  styleClass="classCenter">
+    <center>
+        <VBox spacing="8">
+            <HBox spacing="10">
+                <Button text="Create"/>
+                <Button text="View"/>
+                <Label text="Review"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="ID: " />
+                <TextField fx:id="txtID" promptText="ID" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Artikel: " />
+                <ChoiceBox fx:id="artikel" layoutX="20" layoutY="20">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="art1"/>
+                            <String fx:value="art2"/>
+                            <String fx:value="art3"/>
+
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </HBox>
+            <HBox>
+                <Label text="Score: " />
+                <Slider fx:id="score" min="1" max="5" value="0" blockIncrement="1"
+                        majorTickUnit="1" minorTickCount="0" snapToTicks="true" showTickLabels="true"
+                        showTickMarks="true" layoutX="10" layoutY="5" />
+
+            </HBox>
+
+
+
+            <HBox spacing="10">
+                <Label text="Review: " />
+                <TextArea fx:id="txtReview" promptText="Review" />
+            </HBox>
+
+
+        </VBox>
+    </center>
+    <bottom>
+        <HBox spacing="8">
+            <Button text="Opslaan"/>
+            <Button text="Cancel"/>
+        </HBox>
+
+    </bottom>
+
+</BorderPane>
