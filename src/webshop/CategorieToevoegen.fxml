@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="webshop.Categorie"
+            fx:controller="webshop.CategorieController"
             prefHeight="400.0" prefWidth="600.0" fx:id="pane">
 
     <center>
@@ -25,9 +25,10 @@
                 <TextField fx:id="txtCategorie" promptText="Naam categorie" />
             </HBox>
             <HBox spacing="8">
-                <Button text="Opslaan"/>
+                <Button text="Opslaan" onAction="#catOpslaan"/>
                 <Button text="Annuleren" onAction="#catAnnuleren"/>
             </HBox>
+            <Label fx:id="txtbevestiging" styleClass="classlabel"/>
         </VBox>
     </center>
 

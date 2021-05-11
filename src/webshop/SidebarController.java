@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 
-public class Controller {
+public class SidebarController {
     @FXML
     private Label label;
 
@@ -18,6 +18,7 @@ public class Controller {
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("Categorie");
         mainPane.setCenter(view);
+
     }
 
     public void handleButtonArtikels(ActionEvent actionEvent) {

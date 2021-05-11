@@ -25,6 +25,10 @@
 .label{
 -fx-pref-width: 100px;
 }
+.classlabel{
+    -fx-text-fill: green;
+    -fx-pref-width: 400px;
+}
 
 .slider{
     -fx-padding: 0,0,0,110;
