@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="webshop.Controller"
+            prefHeight="400.0" prefWidth="600.0" styleClass="classCenter">
+
+    <center>
+        <VBox spacing="8">
+            <HBox spacing="10">
+                <Button text="Create"/>
+                <Button text="View"/>
+                <Label text="Klanten"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="ID: " />
+                <TextField fx:id="txtid" promptText="ID" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Voornaam: " />
+                <TextField fx:id="txtVoornaam" promptText="Voornaam" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Achternaam: " />
+                <TextField fx:id="txtAchternaam" promptText="Achternaam" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="E-mailadres: " />
+                <TextField fx:id="txtEmailadres" promptText="E-mailadres" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Leveringsadres: " />
+                <TextField fx:id="txtLeveringsadres" promptText="Leveringsadres" />
+            </HBox>
+            <CheckBox fx:id="adres" text="Levering- en facturatieadres hetzelfde" layoutX="20" layoutY="20" />
+            <HBox spacing="10">
+                <Label text="Facturatieadres: " />
+                <TextField fx:id="txtFacturatieadres" promptText="Facturatieadres" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Leeftijd: " />
+                <TextField fx:id="txtLeeftid" promptText="Leeftijd" />
+            </HBox>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox spacing="8">
+            <Button text="Opslaan"/>
+            <Button text="Cancel"/>
+        </HBox>
+
+    </bottom>
+
+
+</BorderPane>

@@ -1,0 +1,31 @@
+.classCenter{
+    -fx-background-color: linear-gradient(#01949A, #ffffff);
+
+    -fx-border-width: 2px;
+    -fx-padding: 10;
+    -fx-spacing: 8;
+}
+.classMenu{
+     -fx-background-color: linear-gradient(#004369, #ffffff);
+    -fx-padding: 10;
+    -fx-spacing: 8;
+}
+.button{
+    -fx-pref-width: 100px;
+    -fx-background-radius: 0;
+    -fx-background-color:#DB1F48;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.8;
+}
+.button:pressed {
+    -fx-background-color:#DB1F70;
+}
+
+.label{
+-fx-pref-width: 100px;
+}
+
+.slider{
+    -fx-padding: 0,0,0,110;
+}
