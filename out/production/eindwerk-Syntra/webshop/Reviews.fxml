@@ -7,16 +7,17 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.collections.FXCollections?>
+<?import javafx.scene.text.Text?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="webshop.Controller"
-            prefHeight="400.0" prefWidth="600.0"  styleClass="classCenter">
+            prefHeight="400.0" prefWidth="600.0" styleClass="classCenter">
     <center>
         <VBox spacing="8">
+            <Text text="Review" styleClass="header"/>
             <HBox spacing="10">
                 <Button text="Create"/>
                 <Button text="View"/>
-                <Label text="Review"/>
             </HBox>
             <HBox spacing="10">
                 <Label text="ID: " />

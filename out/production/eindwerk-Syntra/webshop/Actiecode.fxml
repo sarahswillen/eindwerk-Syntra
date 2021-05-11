@@ -6,6 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.Text?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="webshop.Controller"
@@ -13,10 +14,10 @@
 
     <center>
         <VBox spacing="8">
+            <Text text="Actiecodes" styleClass="header"/>
             <HBox spacing="10">
                 <Button text="Create"/>
                 <Button text="View"/>
-                <Label text="Actiecode"/>
             </HBox>
             <HBox spacing="10">
                 <Label text="ID: " />
