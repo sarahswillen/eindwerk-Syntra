@@ -5,7 +5,7 @@
 
 <?import java.net.URL?>
 <?import javafx.scene.text.Text?>
-<BorderPane prefHeight="400" prefWidth="700"
+<BorderPane prefHeight="600" prefWidth="700"
             xmlns="http://javafx.com/javafx/11.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="webshop.Controller" fx:id="mainPaine">
