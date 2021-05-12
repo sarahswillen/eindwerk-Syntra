@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="webshop.ArtikelsToevoegen"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <VBox spacing="8">
+            <Text text="Artikel Toevoegen" styleClass="header"/>
+            <HBox spacing="10">
+                <Label text="ID: " />
+                <TextField fx:id="txtid" promptText="ID" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Naam: " />
+                <TextField fx:id="txtNaam" promptText="Naam" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Omschrijving: " />
+                <TextArea fx:id="txtOmschrijving" promptText="Omschrijving" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Categorie: " />
+                <ChoiceBox fx:id="categorie" layoutX="20" layoutY="20">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="cat1"/>
+                            <String fx:value="cat2"/>
+                            <String fx:value="cat3"/>
+
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Prijs: " />
+                <TextField fx:id="txtPrijs" promptText="Prijs" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Gewicht: " />
+                <TextField fx:id="txtGewicht" promptText="Gewicht" />
+            </HBox>
+            <HBox spacing="8">
+                <Button text="Opslaan"/>
+                <Button text="Annuleren"/>
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>

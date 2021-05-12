@@ -15,38 +15,38 @@ public class SidebarController {
 
     @FXML
     private void handleButtonCategorie(ActionEvent event){
-        FxmlLoader object = new FxmlLoader();
+        MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("Categorie");
         mainPane.setCenter(view);
 
     }
 
     public void handleButtonArtikels(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
+        MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("Artikels");
         mainPane.setCenter(view);
     }
 
     public void handleButtonKlanten(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
+        MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("Klanten");
         mainPane.setCenter(view);
     }
 
     public void handleButtonReviews(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
+        MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("Reviews");
         mainPane.setCenter(view);
     }
 
     public void handleButtonActieCodes(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
+        MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("ActieCode");
         mainPane.setCenter(view);
     }
 
     public void handleButtonDashboard(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
+        MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("Dashboard");
         mainPane.setCenter(view);
 
