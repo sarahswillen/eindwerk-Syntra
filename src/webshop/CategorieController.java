@@ -59,18 +59,13 @@ public class CategorieController {
     private static void schrijfCSV(ArrayList<CategorieModel> categorieen, String path) {
         try {
             CSVWriter writer = new CSVWriter((new FileWriter(path, true)));
-
             for (CategorieModel cate: categorieen ) {
                 String[] entry = {String.valueOf(cate.getId()), cate.getNaam()};
                 writer.writeNext(entry);
             }
             writer.close();
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
     }
-
-
 }
