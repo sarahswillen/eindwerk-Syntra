@@ -10,7 +10,7 @@ public class ArtikelsToevoegen {
     @FXML
     private BorderPane pane;
 
-
+//dit is een test om te zien als dit wordt geupdated
     public void artikelToevoegen(ActionEvent actionEvent) {
         MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("ArtikelsToevoegen");
