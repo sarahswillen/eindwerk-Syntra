@@ -15,6 +15,7 @@ public class SidebarController {
 
     @FXML
     private void handleButtonCategorie(ActionEvent event){
+        // sluit andere schermen??
         MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("Categorie");
         mainPane.setCenter(view);

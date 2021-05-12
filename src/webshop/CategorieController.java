@@ -1,13 +1,16 @@
 package webshop;
 
 import com.opencsv.CSVWriter;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -27,6 +30,7 @@ public class CategorieController {
 
     @FXML
     private void catToevoegen(ActionEvent event){
+
         MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("CategorieToevoegen");
         pane.setCenter(view);
@@ -46,7 +50,6 @@ public class CategorieController {
         categorieToevoegen.add( new CategorieModel(txtid.getText(), txtCategorie.getText()) );
         schrijfCSV(categorieToevoegen, bestandspad);
         txtbevestiging.setText("Categorie toegevoegd!");
-
     }
 
     @FXML
