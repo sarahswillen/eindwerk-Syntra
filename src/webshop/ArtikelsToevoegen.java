@@ -12,7 +12,7 @@ public class ArtikelsToevoegen {
 
 
     public void artikelToevoegen(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
+        MeerdereSchermenTonen object = new MeerdereSchermenTonen();
         Pane view = object.getPage("ArtikelsToevoegen");
         pane.setCenter(view);
     }
